@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 button {
@@ -12,6 +14,16 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 12px;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0px 8px;
+  flex: 1 1 100%;
 }
 
 /*HEADER*/
@@ -27,12 +39,9 @@ ul {
   padding: 0;
 }
 
+
 .header {
   color: grey;
-  display: flex;
-  justify-content: space-between;
-  gap: 8px;
-  padding: 0px 8px;
 }
 
 .left-links, .right-links {
@@ -45,10 +54,11 @@ ul {
 .content {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 auto;
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 900px;
+  min-width: 0;
   margin: auto;
   padding: 16px;
 }
@@ -56,6 +66,7 @@ ul {
 img {
   display: flex;
   min-width: 300px;
+  max-width: 600px;
   flex: 0 1 100%;
 }
 
@@ -67,7 +78,7 @@ img {
 
 input {
   display: flex;
-  flex-grow: 1;
+  flex: 1 1 auto;
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px;
@@ -81,6 +92,8 @@ input {
   gap: 8px;
 }
 
-button {
-  padding: 8px 12px;
+/*FOOTER*/
+.footer {
+  background-color: #eeeeee;
+  align-self: flex-end;
 }
