@@ -1,9 +1,9 @@
 body {
   font-family: 'Courier New', Courier, monospace;
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  margin: 16px;
   text-align: center;
-  margin: 16px
 }
 
 img {
@@ -14,16 +14,23 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
-  align-items: center;
-  flex-basis: 100%;
+  flex: 1 0 100%;
+  margin: auto;
 }
 
 .main {
   display: flex;
+  margin: 32px 16px 0px 16px;
+  flex: 1 1 100%;
   gap: 52px;
-  flex: 1  1 200px;
-  margin-top: 32px;
+  justify-content: space-around;
 }
+
+.plant {
+  flex: 1 1 200px;
+}
+
+
 
 
 
